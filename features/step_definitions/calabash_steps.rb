@@ -21,5 +21,5 @@ Then("I wait for {float} seconds") do |float|
 end
 
 Then /^I press back button$/ do
-    Device.press_back_button
+    press_back_button
 end
