@@ -12,6 +12,11 @@ Scenario: Show general statistics
   Then I should see "Fuel price"
   Then I should see "Fuel consumption"
   Then I should see "Fillup locations"
+  And I press the menu key
+  Then I should see "Recalculate"
+  Then I should see "Service intervals"
+  Then I should see "Import / Export"
+  Then I should see "Settings"
 #Item
 Scenario: Show "Fuel economy" statistics
   When I press "Statistics"
@@ -68,6 +73,7 @@ Scenario: Show "Fillup locations" statistics
   Then I should see "West"
 
 #Dinamico
+#Aqui esta la navegacion por todas las estadisticas pero la gran mayoria estan sujetas a un archivo .lic con el cual no contamos o indican que aun no estan desarrolladas
 #Fuel economy
 Scenario: Show "Average fuel economy" detailed statistics
   When I press "Statistics"
