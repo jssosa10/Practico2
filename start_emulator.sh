@@ -1,5 +1,5 @@
 #!/bin/bash
 cd "$(dirname "$(which emulator)")"
 echo $(pwd)
-./emulator -port 5556 -avd Nexus_5_API_26 &>/dev/null &
+./emulator -port $1 -avd $2 &>/dev/null &
 sleep 30
